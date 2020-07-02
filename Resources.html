@@ -1,0 +1,68 @@
+<html>
+<head>
+<script src="p5.js"> </script>
+<title>Resources</title>
+
+</head>
+
+<body>
+
+
+<script id="script" type="text/javascript">
+//<p><a href="page1.html"> Next </a></p>
+
+var displayH; 
+var displayH2;
+var displayW;
+
+function setup(){
+	displayH=displayHeight;
+	displayH2=displayHeight*1.5;
+	displayW=displayWidth;
+	createCanvas(displayWidth, displayH2);
+	background(255);
+}
+
+function draw(){	
+
+	//menu
+	noStroke();
+	fill(0);
+	textFont('Georgia');
+	textSize(50);
+	text("FLOR", 60, 60);
+	textSize(25);
+
+	text("Home", 460, 60);
+	text("Resources", 660, 60);
+	text("Gallery", 860, 60);
+	text("Techniques", 1060, 60);
+
+	//main
+	fill(255, 250, 229);
+	rect(0, 100, displayWidth, displayH);
+
+	//Gallery
+	noStroke();
+	fill(255);
+	rect(0, displayHeight+100, displayWidth, displayHeight/2);
+	fill(0);
+	textFont('Georgia');
+	textSize(60);
+	text("Gallery", displayW/2-100, displayH+170);
+}
+
+	function mouseClicked(){
+        	if((mouseX>460 && mouseX<530) && (mouseY>40 && mouseY<65)){
+            		window.open("file:///Users/jiayixiao/Desktop/html%20javascript%20css/Home.html");}
+		if((mouseX>660 && mouseX<780) && (mouseY>40 && mouseY<65)){
+            		window.open("file:///Users/jiayixiao/Desktop/html%20javascript%20css/Resources.html");}
+		if((mouseX>860 && mouseX<940) && (mouseY>40 && mouseY<65)){
+            		window.open("file:///Users/jiayixiao/Desktop/html%20javascript%20css/Gallery.html");}
+		if((mouseX>1060 && mouseX<1190) && (mouseY>40 && mouseY<65)){
+            		window.open("file:///Users/jiayixiao/Desktop/html%20javascript%20css/Techniques.html");}
+    	}
+
+</script>
+</body>
+</html>

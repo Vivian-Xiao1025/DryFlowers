@@ -1,0 +1,107 @@
+<html>
+<head>
+<script src="p5.js"> </script>
+<title>Techniques</title>
+
+</head>
+
+<body>
+
+
+<script id="script" type="text/javascript">
+//<p><a href="page1.html"> Next </a></p>
+
+var displayH; 
+var displayH2;
+var displayW;
+
+function setup(){
+	displayH=displayHeight;
+	displayH2=displayHeight*1.5;
+	displayW=displayWidth;
+	createCanvas(displayWidth, displayH2);
+	background(255);
+}
+
+function draw(){	
+
+	//menu
+	noStroke();
+	fill(0);
+	textFont('Georgia');
+	textSize(50);
+	text("FLOR", 60, 60);
+	textSize(25);
+	text("Home", 460, 60);
+
+	text("Resources", 660, 60);
+	text("Gallery", 860, 60);
+	text("Techniques", 1060, 60);
+
+	
+	//main
+	fill(255, 250, 229);
+	rect(0, 100, displayWidth, displayHeight);
+	
+	textFont('skia');	
+	//silica gel
+	stroke(255, 250, 229)
+	strokeWeight(50);
+	fill(255);
+	rect(0, 100, displayW/3, displayH);
+	noStroke();
+	fill(0);
+	textSize(50);
+	text("Silica Sand", 90, 200);
+	textSize(20);
+	text("What you will need:\nFlowers\nSilica sand\nMicrowave-safe container\nCup of water\n\nStep 1: Remove leaves and place in \ncontainer. Remove any unwanted leaves\nfrom the flower and cut so that it fits in the\ncontainer. Fill the container with a thin layer\nof silica sand and place flower on top.\n\nStep 2: Cover flower with silica sand.\nCover the flower completely with silica sand.\nIf the flowers are small, you can place\nmultiple in the same container, but be sure\nthey'recompletely covered in the sand.\n\nStep 3: Depending on the flower type. Wait\n2-7 days for the flowers to dry completely.\n\nStep 4: Brush off the sand and display!",50,250);
+
+	//Air Dry
+	stroke(255, 250, 229)
+	strokeWeight(50);
+	fill(255);
+	rect(displayW/3, 100, displayW/3, displayH);
+	noStroke();
+	fill(0);
+	textSize(50);
+	text("Air Dry", displayW/2-90, 200);
+	textSize(20);
+	text("What you will need:\nFlowers\nString\nScissors\nStick or hanger\n\nStep 1:  Prepare flowers by removing leaves.\nTo begin, remove any extra foliage from the\nflower stems. It's okay to leave some\nleaves on the stem too.\n\nStep 2: Group flowers and tie them together.\nGroup flowers as desired and tie the string\naround the base. If the stems are too long,\ncut to your desired length.\n\nStep 3: Attach the flowers to a stick.\nTie the other end of your string to a stick.\nSome alternatives to sticks include hangers,\ndriftwood or anything that's sturdy.\n\nStep 4: Hang the flowers to dry.\nHang the stick in a location that is out of the\nway and also in a dark environment. Any\ndirect light will cause the colors to fade.\n\nStep 5: Leave for three to 3-4 weeks and\ndisplay!",displayW/3+50,250);
+
+	//Pressing
+	stroke(255, 250, 229)
+	strokeWeight(50);
+	fill(255);
+	rect(displayW-displayW/3, 100, displayW/3, displayH);
+	noStroke();
+	fill(0);
+	textSize(50);
+	text("Pressing", displayW-320, 200);
+	textSize(20);
+	text("What you will need:\nFlowers\nUnwanted old book\n\nStep 1: Remove any unwanted leaves and lay\nflat on parchment paper.\n\nStep 2: Open the book and place absorbent\npaper on the book's pages. Large books\nwork best for this because they are heavy and\nhave many pages you can use.\n\nStep 3: Position the blooms face down on\nparchment paper. Carefully close the book,\nmaking sure not to move the flowers.\n\nStep 4: Place more books or other weighty\nobjects on top of the book. \n\nStep 5: Let the flowers sit for 3-4 weeks. The\nlonger you press the flowers, the less water\nwill be left in them. If they don't have a\npapery feel, change out the paper and let\nthem sit for longer.",displayW-430,250);
+	
+	
+	//Gallery
+	noStroke();
+	fill(255);
+	rect(0, displayHeight+100, displayWidth, displayHeight/2);
+	fill(0);
+	textFont('Georgia');
+	textSize(60);
+	text("Gallery", displayW/2-100, displayH+170);
+}
+
+	function mouseClicked(){
+        	if((mouseX>460 && mouseX<530) && (mouseY>40 && mouseY<65)){
+            		window.open("file:///Users/jiayixiao/Desktop/html%20javascript%20css/Home.html");}
+		if((mouseX>660 && mouseX<780) && (mouseY>40 && mouseY<65)){
+            		window.open("file:///Users/jiayixiao/Desktop/html%20javascript%20css/Resources.html");}
+		if((mouseX>860 && mouseX<940) && (mouseY>40 && mouseY<65)){
+            		window.open("file:///Users/jiayixiao/Desktop/html%20javascript%20css/Gallery.html");}
+		if((mouseX>1060 && mouseX<1190) && (mouseY>40 && mouseY<65)){
+            		window.open("file:///Users/jiayixiao/Desktop/html%20javascript%20css/Techniques.html");}
+    	}
+
+</script>
+</body>
+</html>
