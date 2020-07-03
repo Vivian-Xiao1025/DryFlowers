@@ -14,6 +14,11 @@
 var displayH; 
 var displayH2;
 var displayW;
+var img9;
+var img10;
+var img11;
+var img12;
+var img13;
 
 function setup(){
 	displayH=displayHeight;
@@ -21,6 +26,7 @@ function setup(){
 	displayW=displayWidth;
 	createCanvas(displayWidth, displayH2);
 	background(255);
+	
 }
 
 function draw(){	
@@ -89,6 +95,17 @@ function draw(){
 	textFont('Georgia');
 	textSize(60);
 	text("Gallery", displayW/2-100, displayH+170);
+	
+	image(img9, 150, displayHx2-220);
+	img9.resize(0, 200);
+	image(img10, 400, displayHx2-220);
+	img10.resize(0, 200);
+	image(img11, 650, displayHx2-220);
+	img11.resize(0, 200);
+	image(img12, 900, displayHx2-220);
+	img12.resize(0, 200);
+	image(img13, 1150, displayHx2-220);
+	img13.resize(0, 200);
 }
 
 	function mouseClicked(){
