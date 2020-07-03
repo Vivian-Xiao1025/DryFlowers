@@ -15,6 +15,8 @@ var displayH2;
 var displayW;
 var img1;
 var img2;
+var img3;
+var img9;
 var img4;
 var img5;
 var img6;
@@ -29,6 +31,8 @@ function setup(){
 	background(255);
 	img1 = loadImage('uone.jpg');
 	img2 = loadImage('utwo.jpg');
+	img3 = loadImage('uthree.jpg');
+	img9 = loadImage('ufour.jpg');
 	img4 = loadImage('eight.jpg');
 	img5 = loadImage('eleven.jpg');
 	img6 = loadImage('fourteen.jpg');
@@ -78,6 +82,10 @@ function draw(){
 	img1.resize(0, 250);
 	image(img2, displayW/2-100, 160);
 	img2.resize(0, 500);
+	image(img3, 1220, 680);
+	img3.resize(0, 250);
+	image(img9, 960, 330);
+	img9.resize(0, 300);
 	image(img4, 150, displayH2-220);
 	img4.resize(0, 200);
 	image(img5, 400, displayH2-220);
