@@ -13,7 +13,7 @@
 var displayH; 
 var displayW;
 var displayHx2;
-var img;
+var img1;
 
 function setup(){
 	displayH=displayHeight;
@@ -21,7 +21,7 @@ function setup(){
 	displayW=displayWidth;
 	createCanvas(displayWidth, displayHx2);
 	background(255);
-	img = loadImage('one.jpg');
+	img1 = loadImage('one.jpg');
 }
 
 function draw(){	
@@ -85,7 +85,7 @@ function draw(){
 	textSize(60);
 	text("Gallery", displayW/2-100, displayHx2-270);
 	
-	image(img, 0, 100);
+	image(img1, 0, 100);
 
 }
 
