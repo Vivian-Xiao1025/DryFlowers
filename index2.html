@@ -9,7 +9,6 @@
 
 
 <script id="script" type="text/javascript">
-//<p><a href="page1.html"> Next </a></p>
 
 var displayH; 
 var displayH2;
@@ -22,6 +21,7 @@ var img5;
 var img6;
 var img7;
 var img8;
+var img9;
 
 function setup(){
 	displayH=displayHeight;
@@ -29,14 +29,15 @@ function setup(){
 	displayW=displayWidth;
 	createCanvas(displayWidth, displayH2);
 	background(255);
-	img1 = loadImage('eight.jpg');
-	img2 = loadImage('eleven.jpg');
-	img3 = loadImage('fourteen.jpg');
-	img4 = loadImage('eight.jpg');
-	img5 = loadImage('eleven.jpg');
-	img6 = loadImage('fourteen.jpg');
-	img7 = loadImage('five.jpg');
-	img8 = loadImage('fifteen.jpg');
+	img1 = loadImage('nine.jpg');
+	img2 = loadImage('twelve.jpg');
+	img3 = loadImage('twenty.jpg');
+	img4 = loadImage('four.jpg');
+	img5 = loadImage('seventeen.jpg');
+	img6 = loadImage('eighteen.jpg');
+	img7 = loadImage('nineteen.jpg');
+	img8 = loadImage('tone.jpg');
+	img9 = loadImage('ttwo.jpg');
 }
 
 function draw(){	
@@ -73,6 +74,8 @@ function draw(){
 	img6.resize(0, 200);
 	image(img7, 900, displayHx2-220);
 	img7.resize(0, 200);
+	image(img8, 1150, displayHx2-220);
+	img8.resize(0, 200);
 	image(img8, 1150, displayHx2-220);
 	img8.resize(0, 200);
 }
