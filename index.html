@@ -85,7 +85,8 @@ function draw(){
 	textSize(60);
 	text("Gallery", displayW/2-100, displayHx2-270);
 	
-	image(img1, 0, 100, displayWidth, displayHeight/2);
+	image(img1, 0, 100);
+	img1.resize(0,displayHeight/2);
 
 }
 
